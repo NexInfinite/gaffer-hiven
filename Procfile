@@ -1,1 +1,1 @@
-worker: Python gaffer.py
+worker: python gaffer.py
