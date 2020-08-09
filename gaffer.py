@@ -18,32 +18,25 @@ def on_message(ctx):
             user = bot.get_user(ctx.author.username)
             ctx.send(f"The id of `{user.username}` is `{user.id}`")
 
-    if ctx.author.id != bot.user.id:
-        if message.content == "!hello":
+        elif message.content == "!hello":
             ctx.send(f"Hey! This is the gaffer bot. One day, I'll be on a bot account. Until then, this is me.")
 
-    if ctx.author.id != bot.user.id:
-        if message.content == "!giggl":
+        elif message.content == "!giggl":
             ctx.send(f"Giggl (https://giggl.app/) is a really neat service you should sign up for ;)")
 
-    if ctx.author.id != bot.user.id:
-        if message.content == "!giggl":
+        elif message.content == "!giggl":
             ctx.send(f"Giggl (https://giggl.app/) is a really neat service you should sign up for ;)")
 
-    if ctx.author.id != bot.user.id:
-        if message.content == "!hiven":
+        elif message.content == "!hiven":
             ctx.send(f"Bro")
 
-    if ctx.author.id != bot.user.id:
-        if message.content == "!ping":
+        elif message.content == "!ping":
             ctx.send(f"Pong!")
 
-    if ctx.author.id != bot.user.id:
-        if message.content == "!pog":
+        elif message.content == "!pog":
             ctx.send(f"pog")
 
-    if ctx.author.id != bot.user.id:
-        if message.content == "!help":
+        elif message.content == "!help":
             ctx.send(f"I don't have many commands at the moment, but I'm getting there. Here's what I can currently do: \n `!id` - I'll reply with your Hiven user ID \n `!hello` - I'll beg for someone to host me on a bot account.\n `!giggl` - I'll talk about how cool Giggl is\n `!ping` - Pong \n `!pog` - pog \n That's all for now, check back soon for more! Thanks to the creators of Hivenpy for making me possible!")
 
 
