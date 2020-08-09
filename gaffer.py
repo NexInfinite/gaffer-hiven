@@ -49,7 +49,3 @@ def on_message(ctx):
 
 
 bot.login()
-
-
-
-bot.login()
