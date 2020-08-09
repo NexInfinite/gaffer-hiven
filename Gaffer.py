@@ -18,4 +18,6 @@ def on_message(ctx):
             user = bot.get_user(ctx.author.username)
             ctx.send(f"The id of `{user.username}` is `{user.id}`")
 
+
+
 bot.login()
