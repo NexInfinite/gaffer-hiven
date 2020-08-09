@@ -16,7 +16,7 @@ def on_message(ctx):
     if ctx.author.id != bot.user.id:
         if message.content == "!id":
             user = bot.get_user(ctx.author.username)
-            ctx.send(f"The id of `{user.username}` is `{user.id}`")
+            ctx.send(f"Hey `{user.username}`, your ID is `{user.id}`")
 
         elif message.content == "!hello":
             ctx.send(f"Hey! This is the gaffer bot. One day, I'll be on a bot account. Until then, this is me.")
