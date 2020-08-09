@@ -7,7 +7,7 @@ bot = Bot("074eN8vD36T0trTRooDpI0A3HH0ltxEuDq2iWuk4wd784mwb4jYJJZCqW44NHvx04peZr
 
 @events.event
 def on_ready():
-    print(f"I'm logged in as {bot.user.name}")
+    print(f"Logged in as {bot.user.name}")
 
 
 @events.event
@@ -17,6 +17,9 @@ def on_message(ctx):
         if message.content == "!id":
             user = bot.get_user(ctx.author.username)
             ctx.send(f"The id of `{user.username}` is `{user.id}`")
+
+
+bot.login()
 
 
 
