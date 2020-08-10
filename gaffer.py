@@ -1,5 +1,6 @@
 #Hiven Bot Named Gaffer
 
+import math
 from Hiven.client import Bot, events
 
 bot = Bot("074eN8vD36T0trTRooDpI0A3HH0ltxEuDq2iWuk4wd784mwb4jYJJZCqW44NHvx04peZr8ugJ59Ii19b48FidoILnV0jBvZ0SmyLDfIccyVFC391Fa4W8pebwoqcN8F0")
@@ -31,7 +32,7 @@ def on_message(ctx):
             ctx.send(f"Bro")
 
         elif message.content == "!ping":
-            ctx.send(f"Pong! + `{bot.ping}`")
+            ctx.send(f"Pong! + `{math.floor(bot.ping())}`")
 
         elif message.content == "!pog":
             ctx.send(f"pog")
