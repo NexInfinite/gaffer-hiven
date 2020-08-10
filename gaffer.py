@@ -31,7 +31,7 @@ def on_message(ctx):
             ctx.send(f"Bro")
 
         elif message.content == "!ping":
-            ctx.send(f"Pong! + `{bot.ping()}`")
+            ctx.send(f"Pong! + `{bot.ping}`")
 
         elif message.content == "!pog":
             ctx.send(f"pog")
